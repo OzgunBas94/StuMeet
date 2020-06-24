@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>StuMeet</title>
+      <link href="../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="../stylesheets/custom.css" rel="stylesheet">
+   </head>
+   <body>
+      <nav class="navbar navbar-default" role="navigation">
+         <div class="container">
+            <div class="navbar-header">
+               <a class="navbar-brand" href="#">
+               <img src="../img/logo2.png">
+               </a>
+            </div>
+            <ul class="nav navbar-nav">
+               <li class="active"><a href="index.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+               <li><a href="aboutus.html"><span class="glyphicon glyphicon-book"></span> About Us</a></li>
+               <li><a href="contactus.html"><span class="glyphicon glyphicon-question-sign"></span> Contact Us</a></li>
+            </ul>
+            <form class="navbar-form navbar-left" role="form">
+               <div class="input-group">
+                  <span class="input-group-addon">
+                  <span class="glyphicon glyphicon-user"></span>
+                  </span>
+                  <input type="text" class="form-control" id="login-username" placeholder="Username">
+               </div>
+               <div class="input-group">
+                  <span class="input-group-addon">
+                  <span class="glyphicon glyphicon-lock"></span>
+                  </span>
+                  <input type="text" class="form-control" id="login-password" placeholder="Password">
+               </div>
+               <button class="btn btn-info" type="submit" id="login">Log In</button>
+            </form>
+         </div>
+      </nav>
+      <div class="container">
+         <div class="panel panel-default text-center">
+            <div class="panel-heading">
+               <img src="../img/logo.png">
+                 <!--<p>Online dating site for serious relationship</p>-->
+            </div>
+         </div>
+         <div class="col-md-5 span4 center">
+            <div class="panel panel-default  text-center">
+               <div class="panel-heading ">Registration</div>
+               <div class="panel-body">
+                  <form>
+                     <div class="row">
+                        <div class="col-md-12">
+                           <input type="text" class="form-control" id="register-username" placeholder="Username" />
+                        </div>
+                     </div>
+                     <div class="row padding-top-10">
+                        <div class="col-md-12">
+                           <input type="text" class="form-control" id="register-email" placeholder="Email" />
+                        </div>
+                     </div>
+                     <div class="row padding-top-10">
+                        <div class="col-md-12">
+                           <input type="password" class="form-control" id="register-password" placeholder="Password" />
+                        </div>
+                     </div>
+                     <div class="row padding-top-10">
+                        <div class="col-md-12">
+                           <input type="password" class="form-control" id="register-passwordVerification" placeholder="Re-enter password" />
+                        </div>
+                     </div>
+                     <div class="row padding-top-10">
+                        <div class="col-md-12">
+                           <input type="date" class="form-control" id="register-birthday" />
+                        </div>
+                     </div>
+                     <div class="row padding-top-10">
+                        <label for="genderFemale" class="control-label"> You are?</label>
+                        <label for="interestFemale" class="control-label marginleft-label"> You are looking for?</label>
+                     </div>
+                     <div class="row padding-top-10" id="radioGender">
+                        <div class="btn-group" data-toggle="buttons">
+                           <label class="btn btn-primary active">
+                           <input id="genderFemale" type="radio" class="form-control" name="gender" value="Female" autocomplete="off"/> Female
+                           </label>
+                           <label class="btn btn-primary active marginright-20">
+                           <input id="genderMale" type="radio" class="form-control" name="gender" value="Male" autocomplete="off" /> Male
+                           </label>
+                        </div>
+                        <div class="btn-group" data-toggle="buttons">
+                           <label class="btn btn-primary active">
+                           <input id="interestFemale" type="radio" class="form-control" name="interest" value="Female" autocomplete="off"/> a woman
+                           </label>
+                           <label class="btn btn-primary active">
+                           <input id="interestMale" type="radio" class="form-control" name="interest" value="Male" autocomplete="off" /> a man
+                           </label>
+                        </div>
+                     </div>
+                     <div class="row padding-top-10">
+                        <div class="col-md-12">
+                           <button type="submit" class="btn btn-info btn-block" id="next">Next to Sign in</button>
+                        </div>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+      <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+      <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+      <script src="../public/javascripts/register.js"></script>
+      <script src="../public/javascripts/login.js"></script>
+   </body>
+</html>
